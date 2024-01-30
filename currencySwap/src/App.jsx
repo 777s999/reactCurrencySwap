@@ -2,8 +2,6 @@ import { useState } from "react";
 import { InputBox } from "./components";
 import useCurrencyInfo from "./hooks/useCurrencyInfo";
 
-import useCurrencyInfo from "./hooks/useCurrencyInfo";
-
 function App() {
   const [amount, setAmount] = useState(0);
   const [from, setFrom] = useState("usd");
@@ -20,14 +18,14 @@ function App() {
     setConvertedAmount(amount);
     setAmount(convertedAmount);
   };
-  const covert = () => {
+  const convert = () => {
     setConvertedAmount(amount * currencyInfo[to]);
   };
   return (
     <div
-      className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
+      className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat "
       style={{
-        backgroundImage: `url('https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&w=600')`,
+        backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
       }}
     >
       <div className="w-full">
